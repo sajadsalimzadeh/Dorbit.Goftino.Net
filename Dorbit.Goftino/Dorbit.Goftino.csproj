@@ -3,7 +3,7 @@
     <PropertyGroup>
         <TargetFramework>netstandard2.1</TargetFramework>
         <PackageId>Dorbit.Goftino</PackageId>
-        <PackageVersion>1.0.0</PackageVersion>
+        <PackageVersion>1.0.1</PackageVersion>
         <Authors>Sajad salimzadeh</Authors>
         <Description>Development orbit by sajad salimzadeh with goftino api helper</Description>
         <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
