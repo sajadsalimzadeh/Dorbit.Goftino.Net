@@ -41,7 +41,7 @@ public class GoftinoService
 
 ### Controller
 ```C#
-public class GoftinoController(GoftinoService goftinoService) : BaseApiController
+public class GoftinoController(GoftinoService goftinoService) : ControllerBase
 {
     [HttpPost]
     public IActionResult Webhook([FromBody] GoftinoWebhookRequest request)
