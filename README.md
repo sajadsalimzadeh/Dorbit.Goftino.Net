@@ -13,3 +13,41 @@
 ```bash
 dotnet add package Dorbit.Goftino
 ```
+
+## Full example with webhook
+```C#
+public class GoftinoService
+{
+    private readonly GoftinoApiV1WebhookHandler _webhookHandler = new();
+    private const string OperatorId = "<OperatorId>";
+    private GoftinoApiV1 Api => new("<API_KEY>");
+
+    public GoftinoService()
+    {
+        _webhookHandler.OnNewMessage += async (sender, dto) => await NewMessageHandler(dto);
+    }
+
+    public void Handle(GoftinoWebhookRequest request)
+    {
+        _webhookHandler.Handle(request);
+    }
+
+    public async Task NewMessageHandler(GoftinoWebhookNewMessageDto dto)
+    {
+        await Api.SendMessageAsync(new GoftinoMessageSendRequest(dto.ChatId, OperatorId, "Hi"));
+    }
+}
+```
+
+### Controller
+```C#
+public class GoftinoController(GoftinoService goftinoService) : BaseApiController
+{
+    [HttpPost]
+    public IActionResult Webhook([FromBody] GoftinoWebhookRequest request)
+    {
+        goftinoService.Handle(request);
+        return Ok();
+    }
+}
+```
