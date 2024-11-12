@@ -1,6 +1,6 @@
 using System.Text.Json.Serialization;
 
-namespace Dorbit.Goftino.Contracts.V1.Messages
+namespace Dorbit.Goftino.Contracts.V1.Chats
 {
     public class GoftinoChatUnreadMessageRequest
     {

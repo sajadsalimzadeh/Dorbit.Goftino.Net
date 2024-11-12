@@ -1,6 +1,6 @@
 using System.Text.Json.Serialization;
 
-namespace Dorbit.Goftino.Contracts.V1.Operators
+namespace Dorbit.Goftino.Contracts.V1.Chats
 {
     public class GoftinoChatTypeingRequest
     {

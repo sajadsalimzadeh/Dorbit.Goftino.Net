@@ -21,10 +21,6 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="Contracts\V1\" />
-    </ItemGroup>
-
-    <ItemGroup>
         <None Include="../README.md" CopyToOutputDirectory="PreserveNewest">
             <Pack>True</Pack>
             <PackagePath>README.md</PackagePath>
