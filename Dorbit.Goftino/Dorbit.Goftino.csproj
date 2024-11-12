@@ -2,6 +2,18 @@
 
     <PropertyGroup>
         <TargetFramework>netstandard2.1</TargetFramework>
+        <PackageId>Dorbit.Goftino</PackageId>
+        <PackageVersion>1.0.0</PackageVersion>
+        <Authors>Sajad salimzadeh</Authors>
+        <Description>Development orbit by sajad salimzadeh with goftino api helper</Description>
+        <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+        <PackageReleaseNotes>First release</PackageReleaseNotes>
+        <Copyright>Copyright © 2024 Dorbit. All rights reserved.</Copyright>
+        <PackageTags>dorbit goftino api</PackageTags>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+        <RepositoryType>git</RepositoryType>
+        <RepositoryUrl>https://github.com/sajadsalimzadeh/Dorbit.Goftino.Net</RepositoryUrl>
     </PropertyGroup>
 
     <ItemGroup>
@@ -12,4 +24,11 @@
       <Folder Include="Contracts\V1\" />
     </ItemGroup>
 
+    <ItemGroup>
+        <None Include="../README.md" CopyToOutputDirectory="PreserveNewest">
+            <Pack>True</Pack>
+            <PackagePath>README.md</PackagePath>
+        </None>
+    </ItemGroup>
+    
 </Project>
