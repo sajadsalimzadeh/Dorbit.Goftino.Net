@@ -1,0 +1,7 @@
+.idea
+.vs
+packages
+*/bin/*
+*/obj/*
+**/*.pubxml.user
+DiagManager.Compiled
